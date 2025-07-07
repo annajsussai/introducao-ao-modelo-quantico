@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Introdução ao Modelo Quântico</title>
+  <link rel="shortcut icon" href="./favicon.png" type="image/png">
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/atomo.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body id="top">
+  <header>
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="./assets/images/logo.svg" alt="Atom logo">
+      </a>
+      <div class="navbar-wrapper">
+        <button class="navbar-menu-btn" data-navbar-toggle-btn>
+          <ion-icon name="menu-outline"></ion-icon>
+        </button>
+
+        <!-- MENUS -->
+        <nav class="navbar" data-navbar>
+          <ul class="navbar-list">
+            <li class="nav-item">
+              <a href="#home" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">O Átomo Quântico</a>
+            </li>
+            <li class="nav-item">
+              <a href="conceitos.html#conteudo" class="nav-link">Princípio da Incerteza</a>
+            </li>
+            <li class="nav-item">
+              <a href="conceitos.html#superposicao" class="nav-link">Superposição</a>
+            </li>
+            <li class="nav-item">
+              <a href="conceitos.html#entrelacamento" class="nav-link">Entrelaçamento</a>
+            </li>
+            <li class="nav-item">
+              <a href="conceitos.html#quiz" class="nav-link">Quiz</a>
+            </li>
+            <li class="nav-item">
+              <a href="conceitos.html#referencias" class="nav-link">Referências</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <article>
+      <!-- #HERO -->
+      <section class="hero" id="home">
+        <div class="container">
+          <div class="hero-content">
+            <h1 class="h1 hero-title">Introdução ao Modelo Quântico</h1>
+            <p class="hero-text">
+              Como a Física Quântica descreve o átomo?            
+            </p>
+            <button class="btn btn-primary">Iniciar</button>
+          </div>
+          <div class="hero-banner"></div>
+        </div>
+      </section>
+
+      <!-- #ABOUT -->
+      <section class="about" id="about">
+        <div class="container">
+          <div class="about-top">
+            <h2 class="h2 section-title">O Átomo Quântico</h2>
+
+            <!-- INTRODUÇÃO -->
+            <p class="section-text">
+              No início do século XX, a física descobriu que o átomo não se comportava como um "minissistema solar" como propunha o modelo de Bohr, com elétrons girando em órbitas fixas ao redor do núcleo. Em vez disso, a mecânica quântica revelou uma realidade muito mais estranha e fascinante:
+            </p>
+            <p class="section-text">
+              Nuvens de probabilidade: Elétrons não têm posições exatas, mas sim uma "nuvem" de possibilidades descrita pela função de onda (solução da equação de Schrödinger).
+            </p>
+            <p class="section-text">
+              Observação é tudo: Só ao medir um elétron é que sua posição "colapsa" para um ponto específico, antes disso, ele pode estar em múltiplos lugares ao mesmo tempo (superposição).
+            </p>
+            <p class="section-text">
+            O modelo abaixo é uma representação simplificada dessa ideia:
+            </p>
+
+            <!-- DIV DA REPRESENTAÇÃO VISUAL DO MODELO ATOMICO -->
+            <div class="about-bottom">
+              <div class="atom-container" id="container"></div>
+            </div>
+            
+            <!-- LEGENDA -->
+            <p class="section-text">
+              🔴 Nuvem Eletrônica <br>
+              Cada ponto vermelho mostra onde um elétron pode estar<br>
+              Áreas mais densas = maior probabilidade<br>
+              Elétrons não têm órbitas fixas existem como "probabilidades" até serem medidos
+            </p>
+              <p class="section-text">
+                🟢 Prótons <br> São partículas com carga positiva (+)<br>
+                Determinam qual é o elemento químico (ex: hidrogênio tem 1, oxigênio tem 8)
+              </p>
+             <p class="section-text">
+                🔵 Nêutrons<br>
+                São partículas neutras (sem carga)<br>
+                Ajudam a estabilizar o núcleo<br>
+              </p>
+             <p class="section-text">
+                Juntos, prótons e nêutrons formam o núcleo atômico, que tem carga positiva (por causa dos prótons) e concentra quase toda a massa do átomo (99.9%)<br>
+              </p>
+            <p class="section-text">
+                Sabia que o Princípio da Incerteza de Heisenberg surgiu dessa ideia de nuvem de probabiliadades? Avance para entender como medir um elétron muda tudo!
+            </p>
+            </div>
+            
+            <!-- BOTÃO PARA PRÓXIMA PÁGINA -->
+            <a class="btn-avancar" href="conceitos.html">Avançar</a>   
+            </div>
+         </section>
+
+  <!-- #FOOTER -->
+  <footer>
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <img src="./assets/images/logo.svg" alt="Funel logo">
+          </a>
+        </div>
+
+        <div class="footer-menu-container">
+          <ul class="footer-link-list">
+            <li>
+              <a href="#home" class="footer-link">Home</a>
+            </li>
+            <li>
+              <a href="#about" class="footer-link">O Átomo Quântico</a>
+            </li>
+            <li>
+              <a href="conceitos.html#conteudo" class="footer-link">Princípio da Incerteza</a>
+            </li>
+            <li>
+              <a href="conceitos.html#superposicao" class="footer-link">Superposição</a>
+            </li>
+            <li>
+              <a href="conceitos.html#entrelacamento" class="footer-link">Entrelaçamento</a>
+            </li>
+            <li>
+              <a href="conceitos.html#quiz" class="footer-link">Quiz</a>
+            </li>
+            <li>
+              <a href="conceitos.html#referencias" class="footer-link">Referências</a>
+            </li>
+            <li>
+              <a href="https://forms.gle/NQ6GzREzepMDazEs9" class="footer-link">Encontrou um erro?</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-social">
+          <ul class="social-list">
+            <li>
+              <a href="https://github.com/annajsussai" class="social-link">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="copyright">
+        &copy; 2025 Introdução ao Modelo Quântico 
+      </p>
+    </div>
+  </footer>
+
+  <!-- #IR PRO INÍCIO -->
+  <a href="#top" class="go-top active" data-go-top>
+    <ion-icon name="chevron-up-outline"></ion-icon>
+  </a>
+
+  <!-- JS LINK -->
+  <script src="./assets/js/script.js"></script>
+  
+  <!-- ION-ICON LINK -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  
+<script type="importmap">
+  {
+    "imports": {
+      "three": "https://unpkg.com/three@0.161.0/build/three.module.js",
+      "three/addons/": "https://unpkg.com/three@0.161.0/examples/jsm/"
+    }
+  }
+</script>
+
+<script type="module">
+  import * as THREE from 'three';
+  import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+
+  let scene, camera, renderer, controls, clock;
+  let innerSphere, outerSphere, nucleus;
+  let mouseX = 0, mouseY = 0;
+  let windowHalfX = window.innerWidth / 2;
+  let windowHalfY = window.innerHeight / 2;
+
+  init();
+  animate();
+
+  function createNucleus() {
+    const group = new THREE.Group();
+    const protonColor = new THREE.Color(0.1, 0.9, 0.2);  
+    const neutronColor = new THREE.Color(0.2, 0.5, 0.9); 
+    
+    // Criar prótons (verdes)
+    const protonGeometry = new THREE.SphereGeometry(32, 47, 47);
+    const protonMaterial = new THREE.MeshPhongMaterial({ 
+      color: protonColor,
+      emissive: protonColor,
+      emissiveIntensity: 0.5,
+      shininess: 100
+    });
+    
+    // Criar nêutrons (azuis)
+    const neutronGeometry = new THREE.SphereGeometry(32, 47, 47);
+    const neutronMaterial = new THREE.MeshPhongMaterial({ 
+      color: neutronColor,
+      emissive: neutronColor,
+      emissiveIntensity: 0.5,
+      shininess: 100
+    });
+    
+    // Número de prótons e nêutrons
+    const protonCount = 12;
+    const neutronCount = 14;
+    
+    // Posicionar prótons
+    for (let i = 0; i < protonCount; i++) {
+      const proton = new THREE.Mesh(protonGeometry, protonMaterial);
+      
+      const radius = 60 * Math.random();
+      const theta = Math.random() * Math.PI * 2;
+      const phi = Math.acos(2 * Math.random() - 1);
+      
+      proton.position.set(
+        radius * Math.sin(phi) * Math.cos(theta),
+        radius * Math.sin(phi) * Math.sin(theta),
+        radius * Math.cos(phi)
+      );
+      
+      group.add(proton);
+    }
+    
+    // Posicionar nêutrons
+    for (let i = 0; i < neutronCount; i++) {
+      const neutron = new THREE.Mesh(neutronGeometry, neutronMaterial);
+      
+      const radius = 60 * Math.random();
+      const theta = Math.random() * Math.PI * 2;
+      const phi = Math.acos(2 * Math.random() - 1);
+      
+      neutron.position.set(
+        radius * Math.sin(phi) * Math.cos(theta),
+        radius * Math.sin(phi) * Math.sin(theta),
+        radius * Math.cos(phi)
+      );
+      
+      group.add(neutron);
+    }
+    
+    const light = new THREE.PointLight(0xffffff, 50, 200);
+    group.add(light);
+    
+    return group;
+  }
+
+  function createSphereLayer(radius, particleCount, isInner) {
+    const geometry = new THREE.BufferGeometry();
+    const positions = new Float32Array(particleCount * 3);
+    const colors = new Float32Array(particleCount * 3);
+    const sizes = new Float32Array(particleCount);
+    const initialPositions = new Float32Array(particleCount * 3);
+    const rotationDirections = new Float32Array(particleCount);
+
+    const color = new THREE.Color();
+    const baseRadius = radius;
+
+    const colorPalette = isInner ? [
+      [0.5, 0.1, 0.1], [0.4, 0.1, 0.1], [0.3, 0.0, 0.0]
+    ] : [
+      [0.5, 0.1, 0.1], [0.4, 0.1, 0.1], [0.3, 0.0, 0.0]
+    ];
+
+    for (let i = 0; i < particleCount; i++) {
+      const i3 = i * 3;
+      const r = baseRadius * Math.pow(Math.random(), 2);
+      const theta = Math.random() * Math.PI * 2;
+      const phi = Math.acos(2 * Math.random() - 1);
+
+      positions[i3] = r * Math.sin(phi) * Math.cos(theta);
+      positions[i3 + 1] = r * Math.sin(phi) * Math.sin(theta);
+      positions[i3 + 2] = r * Math.cos(phi);
+
+      initialPositions[i3] = positions[i3];
+      initialPositions[i3 + 1] = positions[i3 + 1];
+      initialPositions[i3 + 2] = positions[i3 + 2];
+
+      const [r1, g1, b1] = colorPalette[Math.floor(Math.random() * colorPalette.length)];
+      color.setRGB(
+        r1 + (Math.random() - 0.5) * 0.1,
+        g1 + (Math.random() - 0.5) * 0.1,
+        b1 + (Math.random() - 0.5) * 0.1
+      );
+
+      colors[i3] = color.r;
+      colors[i3 + 1] = color.g;
+      colors[i3 + 2] = color.b;
+
+      sizes[i] = Math.random() * 6 + 4;
+      rotationDirections[i] = isInner ? 1.0 : -1.0;
+    }
+
+    geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+    geometry.setAttribute('color', new THREE.BufferAttribute(colors, 3));
+    geometry.setAttribute('size', new THREE.BufferAttribute(sizes, 1));
+    geometry.setAttribute('initialPosition', new THREE.BufferAttribute(initialPositions, 3));
+    geometry.setAttribute('rotationDirection', new THREE.BufferAttribute(rotationDirections, 1));
+
+    const material = new THREE.ShaderMaterial({
+      uniforms: {
+        time: { value: 0.0 },
+        mouse: { value: new THREE.Vector2() }
+      },
+      vertexShader: `
+        attribute float size;
+        attribute vec3 initialPosition;
+        attribute float rotationDirection;
+        varying vec3 vColor;
+        uniform float time;
+        uniform vec2 mouse;
+
+        void main() {
+          vColor = color;
+          float angle = rotationDirection * time * 0.07;
+          vec3 pos = initialPosition;
+          float cosA = cos(angle);
+          float sinA = sin(angle);
+
+          vec3 newPosition = vec3(
+            pos.x * cosA - pos.z * sinA,
+            pos.y,
+            pos.x * sinA + pos.z * cosA
+          );
+
+          float pulseRadius = length(newPosition);
+          newPosition *= 1.0 + sin(time + pulseRadius * 0.01) * 0.01;
+
+          float mouseInfluence = smoothstep(800.0, 0.0, length(newPosition.xy - mouse * 300.0));
+          newPosition.xy += mouse * mouseInfluence * 20.0;
+
+          vec4 mvPosition = modelViewMatrix * vec4(newPosition, 1.0);
+          gl_Position = projectionMatrix * mvPosition;
+          gl_PointSize = size * (500.0 / -mvPosition.z);
+        }
+      `,
+      fragmentShader: `
+        varying vec3 vColor;
+        void main() {
+          vec2 xy = gl_PointCoord.xy - vec2(0.5);
+          float radius = length(xy);
+          float alpha = smoothstep(0.5, 0.45, radius);
+          gl_FragColor = vec4(vColor, alpha * 0.8);
+        }
+      `,
+      blending: THREE.AdditiveBlending,
+      depthTest: true,
+      transparent: true,
+      vertexColors: true
+    });
+
+    return new THREE.Points(geometry, material);
+  }
+
+  function init() {
+    scene = new THREE.Scene();
+    scene.fog = new THREE.FogExp2(0x000000, 0.0001);
+
+    // Obtém as dimensões do container
+    const container = document.getElementById('container');
+    const width = container.clientWidth;
+    const height = container.clientHeight;
+
+    camera = new THREE.PerspectiveCamera(75, width / height, 1, 10000);
+    camera.position.z = 1000;
+
+    renderer = new THREE.WebGLRenderer({ 
+      antialias: true,
+      // Otimização mobile
+      powerPreference: "high-performance"
+    });
+    
+    // Configuração responsiva
+    renderer.setSize(width, height);
+    renderer.setPixelRatio(window.devicePixelRatio);
+    container.appendChild(renderer.domElement);
+
+    // Controles otimizados para mobile e desktop
+    controls = new OrbitControls(camera, renderer.domElement);
+    controls.enableDamping = true;
+    controls.dampingFactor = 0.05;
+    controls.rotateSpeed = 0.5;
+    controls.enableZoom = true;
+    controls.zoomSpeed = 0.5;
+    controls.minDistance = 500;
+    controls.maxDistance = 2000;
+    
+    // Suporte a touchscreen
+    controls.touches = {
+      ONE: THREE.TOUCH.ROTATE,
+      TWO: THREE.TOUCH.DOLLY_PAN
+    };
+
+    clock = new THREE.Clock();
+
+    // Cria cena
+    nucleus = createNucleus();
+    scene.add(nucleus);
+
+    innerSphere = createSphereLayer(400, 60000, true);
+    outerSphere = createSphereLayer(600, 30000, false);
+
+    scene.add(innerSphere);
+    scene.add(outerSphere);
+
+    const ambientLight = new THREE.AmbientLight(0x404040);
+    scene.add(ambientLight);
+
+    const directionalLight = new THREE.DirectionalLight(0xffffff, 0.5);
+    directionalLight.position.set(1, 1, 1);
+    scene.add(directionalLight);
+
+    // Event listeners responsivos
+    window.addEventListener('resize', onWindowResize);
+    document.addEventListener('mousemove', onMouseMove);
+    container.addEventListener('touchmove', onTouchMove, { passive: false });
+  }
+
+  function animate() {
+    requestAnimationFrame(animate);
+    const time = clock.getElapsedTime();
+
+    innerSphere.material.uniforms.time.value = time;
+    outerSphere.material.uniforms.time.value = time;
+
+    innerSphere.material.uniforms.mouse.value.set(
+      (mouseX / windowHalfX) * 0.5,
+      (-mouseY / windowHalfY) * 0.5
+    );
+    outerSphere.material.uniforms.mouse.value.set(
+      (mouseX / windowHalfX) * 0.5,
+      (-mouseY / windowHalfY) * 0.5
+    );
+
+    nucleus.rotation.x = time * 0.05;
+    nucleus.rotation.y = time * 0.1;
+
+    controls.update();
+    renderer.render(scene, camera);
+  }
+
+  function onWindowResize() {
+    const container = document.getElementById('container');
+    const width = container.clientWidth;
+    const height = container.clientHeight;
+
+    windowHalfX = width / 2;
+    windowHalfY = height / 2;
+
+    camera.aspect = width / height;
+    camera.updateProjectionMatrix();
+    renderer.setSize(width, height);
+  }
+
+  function onMouseMove(event) {
+    mouseX = event.clientX - windowHalfX;
+    mouseY = event.clientY - windowHalfY;
+  }
+
+  function onTouchMove(event) {
+    event.preventDefault();
+    if (event.touches.length === 1) {
+      const touch = event.touches[0];
+      const rect = event.target.getBoundingClientRect();
+      mouseX = (touch.clientX - rect.left) - windowHalfX;
+      mouseY = (touch.clientY - rect.top) - windowHalfY;
+    }
+  }
+</script>
+</body>
+</html>

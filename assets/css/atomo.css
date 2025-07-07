@@ -1,0 +1,34 @@
+.atom-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px; 
+  height: 50vh; 
+  min-height: 400px; 
+  margin: 2rem auto; 
+  background-color: #000;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/*----------*\ 
+RESPONSIVIDADE
+\*----------*/
+@media (max-width: 768px) {
+  .atom-container {
+    height: 40vh;
+    min-height: 300px;
+  }
+}
+
+/* CONTAINER THREE.JS */
+#container {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* CANVAS THREE.JS */
+#container canvas {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+}

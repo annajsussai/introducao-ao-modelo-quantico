@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Introdução ao Modelo Quântico</title>
+  <link rel="shortcut icon" href="./favicon.png" type="image/png">
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/conceitos.css">
+  <link rel="stylesheet" href="./assets/css/atomo.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body id="top">
+  <header>
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="./assets/images/logo.svg" alt="Atom logo">
+      </a>
+      <div class="navbar-wrapper">
+        <button class="navbar-menu-btn" data-navbar-toggle-btn>
+          <ion-icon name="menu-outline"></ion-icon>
+        </button>
+
+        <!-- MENUS -->
+        <nav class="navbar" data-navbar>
+          <ul class="navbar-list">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html#about" class="nav-link">O Átomo Quântico</a>
+            </li>
+            <li class="nav-item">
+              <a href="#conteudo" class="nav-link">Princípio da Incerteza</a>
+            </li>
+            <li class="nav-item">
+              <a href="#superposicao" class="nav-link">Superposição</a>
+            </li>
+            <li class="nav-item">
+              <a href="#entrelacamento" class="nav-link">Entrelaçamento</a>
+            </li>
+            <li class="nav-item">
+              <a href="#quiz" class="nav-link">Quiz</a>
+            </li>
+            <li class="nav-item">
+              <a href="#referencias" class="nav-link">Referências</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!--------------------
+    PRINCÍPIO DA INCERTEZA
+    ---------------------->
+    <section class="conteudo" id="conteudo">
+      <div class="container">
+        <h2 class="h2 section-title">Princípio da Incerteza de Heisenberg</h2>
+          <p class="section-text">
+           Em 1926, Werner Heisenberg mostrou que não podemos saber com precisão absoluta a posição e a velocidade de um elétron ao mesmo tempo. 
+          </p>
+          <!-- DIV REPRESENTAÇÃO VISUAL PARADOXO QUÂNTICO -->
+          <div class="quantum-paradox">
+            <div class="paradox-scenario">
+            <div class="electron-container">
+              <div class="electron stationary"></div>
+              <span class="uncertainty-mark">?</span> <!-- Cima -->
+              <span class="uncertainty-mark">?</span> <!-- Direita -->
+              <span class="uncertainty-mark">?</span> <!-- Baixo -->
+              <span class="uncertainty-mark">?</span> <!-- Esquerda -->
+            </div>
+              <p class="paradox-text">Se a posição atual está clara, a direção futura é incerta</p>
+            </div>
+            <div class="paradox-scenario">
+              <div class="electron-container">
+                <div class="electron super-fast"></div>
+              </div>
+              <p class="paradox-text">Se a direção futura está clara, a posição atual é incerta</p>
+            </div>      
+          </div>
+          <p class="section-text">
+            Quanto mais tentamos "prender" o elétron em um lugar específico (posição), menos sabemos sobre sua velocidade, e vice-versa. Mas, por que isso acontece?          
+          </p>
+
+          <!-- BOTÃO 1 - Elétrons -->
+        <button type="button" class="collapsible">Elétrons: partículas minúsculas</button>
+          <div class="content">
+            <p> 
+              Qualquer tentativa de medir sua posição ou velocidade interfere nele! Diferente de objetos grandes que podemos medir sua posição e velocidade facilmente porque a luz (ou outros instrumentos) não interferem significativamente no movimento dele.
+            </p>
+          </div>
+
+          <!-- BOTÃO 2 - Analogia -->
+        <button type="button" class="collapsible">Analogia</button>
+          <div class="content">
+            <p>
+              Para um melhor entendimento, imagine que você está em um quarto escuro e quer descobrir onde está um gato (posição) e para onde ele está correndo (velocidade). Se você acender uma lanterna potente para vê-lo claramente, o gato se assusta e corre para outro lugar.
+              </br>
+              Se você usa luz muito fraca, mal enxerga sua posição, mas o gato não se mexe.
+              </br>
+              Se usa luz forte, sabe onde ele está, mas não para onde vai depois.
+            </br>
+              (Assim como o elétron, o gato é "perturbado" pelo ato de observá-lo!)
+            </p>
+          </div>
+
+          <!-- BOTÃO 3 - Fórmula -->
+        <button type="button" class="collapsible">Fórmula Matemática</button>
+          <div class="content">
+            <img src="/assets/images/formula_principio_da_incerteza.svg" alt="Fórmula do princípio da incerteza">
+            <p>
+              A incerteza da posição (ΔX) vezes a incerteza do momento (Δp) tem que ser maior ou igual (≥) a h, que é a constante de Planck, sobre 4π.            
+            </p>
+        </div>
+          <p class="section-text">
+            E se dissermos que, antes mesmo de medir, o elétron pode estar em vários lugares ao mesmo tempo? Isso nos leva ao próximo conceito...
+          </p>
+    </section>
+
+    <!--------------------
+    SUPERPOSIÇÃO QUÂNTICA
+    ---------------------->
+    <section class="conteudo" id="superposicao">
+      <div class="container">
+        <h2 class="h2 section-title">Superposição Quântica</h2>
+          <p class="section-text">
+            Imagine bater levemente na superfície de um lago em dois pontos diferentes. As ondas se espalham e, ao se encontrarem, criam um padrão complexo, isso é uma superposição clássica. No mundo quântico, partículas como elétrons e fótons também têm comportamento ondulatório, mas com uma diferença crucial: elas podem existir em múltiplos estados simultaneamente, como estar em dois lugares ou com duas velocidades ao mesmo tempo.
+          </p>
+
+          <!-- BOTÃO 1 - Ondas Quânticas -->
+          <button type="button" class="collapsible">Ondas Quânticas</button>
+            <div class="content">
+            <p>
+              Enquanto as ondas do lago são feitas de água, as "ondas" quânticas são funções de probabilidade matemáticas. Elas descrevem, por exemplo, a chance de um elétron ter certa velocidade ou estar em uma posição específica. Quando falamos em superposição, significa que o elétron está em todos os estados possíveis até que alguém meça ou observe aí ele "escolhe" um deles (como uma moeda lançada no ar, só para de girar quando olhamos).
+            </p>
+            </div>
+
+          <!-- BOTÃO 2 - Analogias -->
+          <button type="button" class="collapsible">Analogias famosas</button>
+            <div class="content">
+            <div class="analogies-container">
+                      
+                <!-- MOEDA NO AR -->
+                <div class="analogy-box">
+                  <div class="analogy-animation">
+                    <div class="coin-quantum">
+                      <div class="coin-face heads">CARA</div>
+                      <div class="coin-face tails">COROA</div>
+                    </div>
+                    <div class="hand"></div>
+                  </div>
+                  <div class="analogy-text">
+                    <h4>Moeda no Ar:</h4>
+                    <p>
+                      Enquanto está girando, ela não é cara nem coroa, mas sim uma "nuvem de possibilidades" onde os dois estados coexistem (superposição quântica); só quando cai na sua mão e você olha (observação) é que essa nuvem colapsa em um estado definido, assim como partículas subatômicas que só "decidem" seu comportamento quando são medidas. 
+                    </p>
+                  </div>
+                </div>
+                      
+                <!-- GATO DE SCHRODINGER -->
+                  <div class="analogy-box">
+                    <div class="analogy-animation">
+                      <div class="schrodinger-box">
+                        <div class="cat-alive">=^._.^=</div>
+                        <div class="cat-dead">X_X</div>
+                        <div class="flask"></div>
+                      </div>
+                    </div>
+                    <div class="analogy-text">
+                      <h4>Gato de Schrödinger:</h4>
+                        <p>
+                          O experimento mental propõe um gato dentro de uma caixa totalmente isolada (sem ver, ouvir ou sentir o que tem dentro). Junto com ele, tem um frasco de veneno que pode ou não quebrar, dependendo de um evento aleatório. Até você abrir a caixa, como não dá pra saber se o veneno foi liberado, o gato estaria "vivo E morto ao mesmo tempo".
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <!-- BOTÃO 3 - Dupla Fenda -->
+        <button type="button" class="collapsible">Experimento da Dupla Fenda</button>
+          <div class="content">
+            <img src="/assets/images/dupla-fenda.png" alt="Fórmula do princípio da incerteza">
+              <p>
+                O experimento mostra que partículas como elétrons se comportam como ondas quando não observadas (criando padrões de interferência ao passar por duas fendas), mas agem como partículas quando medimos. Isso prova que, no mundo quântico, a observação define a realidade.
+              </p>
+          </div>
+        <p class="section-text">
+          E se partículas em superposição pudessem "conversar" entre si, mesmo separadas por todo o universo? Isso nos leva ao próximo mistério quântico...
+        </p>
+      </div>
+    </section>
+
+    <!---------------------- 
+    ENTRELAÇAMENTO QUÂNTICO 
+    ---------------------->
+    <section class="conteudo" id="entrelacamento">
+      <div class="container">
+        <h2 class="h2 section-title">Entrelaçamento quântico</h2>
+          <p class="section-text">
+            O entrelaçamento quântico é um dos conceitos mais intrigantes da física moderna. Ele ocorre quando duas ou mais partículas subatômicas, como elétrons ou fótons, tornam-se tão profundamente conectadas que o estado de uma afeta instantaneamente o estado da outra, independentemente da distância que as separa. O exemplo abaixo busca representar de forma simplificada essa ideia:
+          </p>
+          
+        <!-- ANIMAÇÃO QUÂNTICA -->
+        <div class="quantum-entanglement-box">
+          <div class="entanglement-visual">
+
+            <!-- Partícula 1 -->
+            <div class="entangled-particle particle-left">
+              <div class="particle-core"></div>
+              <div class="particle-state">?</div>
+            </div>
+              
+            <!-- Conexão Quântica -->
+            <div class="quantum-bond">
+              <div class="bond-line"></div>
+              <div class="bond-effect"></div>
+            </div>
+              
+            <!-- Partícula 2 -->
+            <div class="entangled-particle particle-right">
+              <div class="particle-core"></div>
+              <div class="particle-state">?</div>
+            </div>
+          </div>
+            
+          <div class="entanglement-text">
+            <p class="dynamic-text">Preparando partículas entrelaçadas...</p>
+          </div>
+      </div>
+      
+      <p class="section-text">Esta animação ilustra o entrelaçamento quântico: duas partículas conectadas têm spins indefinidos (?) até que uma é medida. Quando uma partícula colapsa para ↑ ou ↓, a outra assume instantaneamente o estado oposto, mesmo à distância, demonstrando essa intrigante conexão quântica.</p>
+
+      <!-- BOTÃO 3 - Elétrons -->
+      <button type="button" class="collapsible">Características Principais</button>
+        <div class="content">
+          <p>
+            Conexão Instantânea: Medir uma partícula determina imediatamente o estado da outra, mesmo que estejam a anos-luz de distância.
+            </br>
+            Não-Localidade: O fenômeno desafia a noção clássica de que nenhuma informação pode viajar mais rápido que a luz.            
+            </br>
+            Se usa luz forte, sabe onde ele está, mas não para onde vai depois.
+            </br>
+            Albert Einstein chamou esse efeito de "ação fantasmagórica à distância", pois ele parecia violar as leis da física tradicional.          
+          </p>
+        </div>
+
+      <!-- BOTÃO 1 - Analogia -->
+      <button type="button" class="collapsible">Por que o Entrelaçamento é "Real"?</button>
+        <div class="content">
+          <p>
+              O Teorema de Bell (1964)
+              </br> 
+              O Problema: Einstein acreditava que, se duas partículas entrelaçadas se comportavam de forma correlacionada, deveria haver "variáveis ocultas" (regras secretas da natureza) explicando isso.
+              </br>
+              A Solução de Bell: Ele criou um teste matemático (Desigualdades de Bell) para verificar se essas "variáveis ocultas" existiam.
+              </br>
+              O Resultado: Se as partículas seguissem as leis da física clássica, os resultados das medições teriam um limite. Mas, na prática, elas violam esse limite, provando que não há variáveis ocultas e que a conexão quântica é real e não-local (ou seja, não depende de distância).
+          </p>
+        </div>
+
+      <!-- BOTÃO 2 - Fórmula -->
+      <button type="button" class="collapsible">Como Provaram na Prática?</button>
+        <div class="content">
+          <img src="https://jornal.unesp.br/wp-content/uploads/2022/10/img-1-sem-legenda.jpg" alt="Fórmula do princípio da incerteza">
+          <p>
+            Aspect, Clauser e Zeilinger (Nobel 2022)
+            </br>
+            Esses três cientistas testaram as ideias de Bell em laboratório e fecharam todas as brechas que poderiam sustentar explicações clássicas.
+            </br>
+          </p>
+        </div>
+        <p class="section-text">
+          Depois de explorar o modelo atômico quântico, o princípio da incerteza, a superposição e o entrelaçamento, que tal testar como esses conceitos se conectam na prática?  
+        </p>
+    </section>
+
+    <!---------------------- 
+              QUIZ
+    ---------------------->
+    <section class="quiz" id="quiz">
+      <div class="container">
+        <div class="quiz-card">
+          <h3 class="quiz-title">Teste seu conhecimento quântico!</h3>
+                
+          <div class="quantum-quiz-container">
+            <div class="quantum-quiz-progress" id="quantum-quiz-progress">1/7</div>
+                    
+            <div class="quantum-quiz-question active" data-question="1">
+              <div class="quantum-quiz-question-text">1. Princípio da Incerteza<br>Se você medir a posição de um elétron com alta precisão, o que acontece com a medição da sua velocidade?</div>
+              <div class="quantum-quiz-options">
+                <div class="quantum-quiz-option" data-correct="false">a) Também fica precisa.</div>
+                <div class="quantum-quiz-option" data-correct="true">b) Fica menos precisa.</div>
+              </div>
+              <div class="quantum-quiz-feedback">
+                <span class="quantum-quiz-feedback-icon">💡</span>
+                <span class="quantum-quiz-feedback-text">Isso mesmo! Heisenberg mostrou que não podemos saber as duas coisas ao mesmo tempo.</span>
+              </div>
+              <div class="quantum-quiz-try-again" style="display: none;">
+                <span class="quantum-quiz-feedback-icon">🔍</span>
+                <span class="quantum-quiz-feedback-text">Quase lá! Tente novamente. Lembre-se que na física quântica, medir uma propriedade afeta outra.</span>
+              </div>
+            </div>
+                        
+            <div class="quantum-quiz-question" data-question="2">
+              <div class="quantum-quiz-question-text">2. Modelo de Schrödinger<br>No modelo quântico, os elétrons são representados por:</div>
+              <div class="quantum-quiz-options">
+                <div class="quantum-quiz-option" data-correct="false">a) Orbitais fixos como planetas.</div>
+                <div class="quantum-quiz-option" data-correct="true">b) Nuvens de probabilidade.</div>
+              </div>
+              <div class="quantum-quiz-feedback">
+                <span class="quantum-quiz-feedback-icon">💡</span>
+                <span class="quantum-quiz-feedback-text">Certinho! Os elétrons não têm trajetórias definidas — a "nuvem" mostra onde há maior chance de encontrá-los.</span>
+              </div>
+              <div class="quantum-quiz-try-again" style="display: none;">
+                <span class="quantum-quiz-feedback-icon">🔍</span>
+                <span class="quantum-quiz-feedback-text">Ops! Na física quântica, os elétrons não seguem órbitas fixas como no sistema solar. Pense em probabilidades.</span>
+              </div>
+            </div>
+                        
+            <div class="quantum-quiz-question" data-question="3">
+              <div class="quantum-quiz-question-text">3. Superposição<br>O que significa "superposição quântica"?</div>
+              <div class="quantum-quiz-options">
+                <div class="quantum-quiz-option" data-correct="true">a) O elétron está em vários lugares ao mesmo tempo até ser medido.</div>
+                <div class="quantum-quiz-option" data-correct="false">b) O elétron viaja mais rápido que a luz.</div>
+              </div>
+              <div class="quantum-quiz-feedback">
+                <span class="quantum-quiz-feedback-icon">💡</span>
+                <span class="quantum-quiz-feedback-text">Exato! É como um dado no ar: enquanto não cai, ele mostra todas as faces possíveis.</span>
+              </div>
+              <div class="quantum-quiz-try-again" style="display: none;">
+                <span class="quantum-quiz-feedback-icon">🔍</span>
+                <span class="quantum-quiz-feedback-text">Hmm, não é sobre velocidade. Pense em como uma partícula pode existir em múltiplos estados simultaneamente.</span>
+              </div>
+            </div>
+                    
+            <div class="quantum-quiz-question" data-question="4">
+              <div class="quantum-quiz-question-text">4. Aplicação Prática<br>Qual tecnologia do dia a dia usa princípios quânticos?</div>
+              <div class="quantum-quiz-options">
+                <div class="quantum-quiz-option" data-correct="true">a) Ressonância magnética (MRI).</div>
+                <div class="quantum-quiz-option" data-correct="false">b) Motor a vapor.</div>
+              </div>
+              <div class="quantum-quiz-feedback">
+                <span class="quantum-quiz-feedback-icon">💡</span>
+                <span class="quantum-quiz-feedback-text">Acertou! O MRI mede o spin de átomos no seu corpo (um efeito puramente quântico!)</span>
+              </div>
+              <div class="quantum-quiz-try-again" style="display: none;">
+                <span class="quantum-quiz-feedback-icon">🔍</span>
+                <span class="quantum-quiz-feedback-text">Pense em tecnologias modernas que dependem do comportamento de partículas subatômicas.</span>
+              </div>
+            </div>
+                    
+            <div class="quantum-quiz-question" data-question="5">
+              <div class="quantum-quiz-question-text">5. Tamanho do Átomo<br>Se o núcleo atômico fosse do tamanho de uma bola de tênis, o átomo inteiro teria o tamanho de:</div>
+              <div class="quantum-quiz-options">
+                <div class="quantum-quiz-option" data-correct="false">a) Uma quadra de basquete.</div>
+                <div class="quantum-quiz-option" data-correct="true">b) Um estádio de futebol.</div>
+              </div>
+              <div class="quantum-quiz-feedback">
+                <span class="quantum-quiz-feedback-icon">💡</span>
+                <span class="quantum-quiz-feedback-text">Isso! O átomo é quase "vazio": a maior parte é espaço onde os elétrons podem estar.</span>
+              </div>
+              <div class="quantum-quiz-try-again" style="display: none;">
+                <span class="quantum-quiz-feedback-icon">🔍</span>
+                <span class="quantum-quiz-feedback-text">Pense na escala: os elétrons orbitam muito longe do núcleo em comparação com seu tamanho.</span>
+              </div>
+            </div>
+                    
+            <div class="quantum-quiz-question" data-question="6">
+              <div class="quantum-quiz-question-text">6. Emaranhamento Quântico<br>Se duas partículas estão emaranhadas, o que acontece quando medimos uma delas?</div>
+              <div class="quantum-quiz-options">
+                <div class="quantum-quiz-option" data-correct="true">a) A outra instantaneamente assume um estado correlacionado.</div>
+                <div class="quantum-quiz-option" data-correct="false">b) Nada — elas são independentes.</div>
+              </div>
+              <div class="quantum-quiz-feedback">
+                <span class="quantum-quiz-feedback-icon">💡</span>
+                <span class="quantum-quiz-feedback-text">Correto! Einstein chamou isso de "ação fantasmagórica à distância". É como ter dois dados que sempre caem no mesmo número, mesmo separados!</span>
+              </div>
+              <div class="quantum-quiz-try-again" style="display: none;">
+                <span class="quantum-quiz-feedback-icon">🔍</span>
+                <span class="quantum-quiz-feedback-text">Lembre-se que partículas emaranhadas mantêm uma conexão especial, mesmo quando separadas.</span>
+              </div>
+            </div>
+                        
+            <div class="quantum-quiz-question" data-question="7">
+              <div class="quantum-quiz-question-text">7. Dualidade Onda-Partícula<br>O experimento da dupla fenda provou que elétrons podem:</div>
+              <div class="quantum-quiz-options">
+                <div class="quantum-quiz-option" data-correct="true">a) Se comportar como ondas e partículas.</div>
+                <div class="quantum-quiz-option" data-correct="false">b) Virar energia pura.</div>
+              </div>
+              <div class="quantum-quiz-feedback">
+                <span class="quantum-quiz-feedback-icon">💡</span>
+                <span class="quantum-quiz-feedback-text">Certo! Elétrons criam padrões de interferência (como ondas), mas são detectados como partículas individuais.</span>
+              </div>
+              <div class="quantum-quiz-try-again" style="display: none;">
+                <span class="quantum-quiz-feedback-icon">🔍</span>
+                <span class="quantum-quiz-feedback-text">O experimento mostra um comportamento surpreendente que combina propriedades de ondas e partículas.</span>
+              </div>
+            </div>
+                        
+            <div class="quantum-quiz-navigation">
+              <button class="btn btn-secondary quantum-quiz-prev" id="quantum-quiz-prev">Anterior</button>
+              <button class="btn btn-secondary quantum-quiz-next" id="quantum-quiz-next">Próxima</button>
+              <button class="btn btn-secondary quantum-quiz-restart" id="quantum-quiz-restart" style="display: none;">Reiniciar Quiz</button>
+            </div>
+                        
+            <div class="quantum-quiz-results" id="quantum-quiz-results" style="display: none;">
+              <h4>Resultado do Quiz</h4>
+              <p id="quantum-quiz-score-text">Você acertou X de 7 perguntas!</p>
+              <p id="quantum-quiz-performance-comment"></p>
+            </div>
+          </div>
+        </div> 
+      </div> 
+    </section>
+
+
+    <!---------------------- 
+          REFERÊNCIAS
+    ---------------------->
+    <section class="referencias" id="referencias">
+      <div class="container">
+        <div class="referencias-content">
+          <h2 class="h2 referencias-title">Referências</h2>
+          <figure class="referencias-banner">
+            <img src="./assets/images/referencias.svg" alt="referencias banner">
+          </figure>
+        </div>
+          <!-- Lista de referências -->
+        <div class="referencias-links" id="referenciasLinks">
+          <div class="referencia-item">
+            <p class="item-text">
+              <strong>O princípio da incerteza de Heisenberg</strong> - 
+              <a target="_blank" href="https://brasilescola.uol.com.br/quimica/o-principio-incerteza-heisenberg.htm">
+                <ion-icon name="open-outline"></ion-icon> Link
+              </a>
+            </p>
+          </div>
+
+          <div class="referencia-item">
+            <p class="item-text">
+              <strong>What Is Superposition and Why Is It Important?</strong> - 
+              <a target="_blank" href="https://scienceexchange.caltech.edu/topics/quantum-science-explained/quantum-superposition">
+                <ion-icon name="open-outline"></ion-icon> Artigo
+              </a>
+            </p>
+          </div>
+
+          <div class="referencia-item">
+            <p class="item-text">
+              <strong>Prêmio Nobel de Física: o que é o entrelaçamento quântico</strong> - 
+              <a target="_blank" href="https://www.bbc.com/portuguese/geral-63138333">
+                <ion-icon name="open-outline"></ion-icon> Matéria
+              </a>
+            </p>
+          </div>
+
+          <div class="referencia-item">
+            <p class="item-text">
+              <strong>O modelo de mecânica quântica do átomo</strong> - 
+              <a target="_blank" href="https://pt.khanacademy.org/science/physics/quantum-physics/quantum-numbers-and-orbitals/a/the-quantum-mechanical-model-of-the-atom">
+                <ion-icon name="open-outline"></ion-icon> Khan Academy
+              </a>
+            </p>
+          </div>
+
+          <div class="referencia-item">
+            <p class="item-text">
+              <strong>Física Quântica: um novo jeito de enxergar as leis naturais</strong> - 
+                <a target="_blank" href="https://engenharia360.com/fisica-quantica-e-as-leis-naturais/">
+                  <ion-icon name="open-outline"></ion-icon> Engenharia 360
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <!---------------------- 
+          FOOTER 
+  ---------------------->
+  <footer>
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <img src="./assets/images/logo.svg" alt="Funel logo">
+          </a>
+        </div>
+
+        <div class="footer-menu-container">
+          <ul class="footer-link-list">
+            <li>
+              <a href="index.html#home" class="footer-link">Home</a>
+            </li>
+            <li>
+              <a href="index.html#about" class="footer-link">O Átomo Quântico</a>
+            </li>
+            <li>
+              <a href="#conteudo" class="footer-link">Princípio da Incerteza</a>
+            </li>
+            <li>
+              <a href="#superposicao" class="footer-link">Superposição</a>
+            </li>
+            <li>
+              <a href="#entrelacamento" class="footer-link">Entrelaçamento</a>
+            </li>
+            <li>
+              <a href="#quiz" class="footer-link">Quiz</a>
+            </li>
+            <li>
+              <a href="#referencias" class="footer-link">Referências</a>
+            </li>
+            <li>
+              <a href="https://forms.gle/NQ6GzREzepMDazEs9" class="footer-link">Encontrou um erro?</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-social">
+          <ul class="social-list">
+            <li>
+              <a href="https://github.com/annajsussai" class="social-link">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="copyright">
+        &copy; 2025 Introdução ao Modelo Quântico 
+      </p>
+    </div>
+  </footer>
+
+  <!-- #IR PRO INÍCIO -->
+  <a href="#top" class="go-top active" data-go-top>
+    <ion-icon name="chevron-up-outline"></ion-icon>
+  </a>
+
+  <!-- JS LINK -->
+  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/quiz.js"></script>
+
+  <!-- ION-ICON LINK -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
