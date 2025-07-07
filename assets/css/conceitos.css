@@ -1122,7 +1122,7 @@ RESPONSIVIDADE
 
     /* Conteúdo */
     .conteudo .h2 {
-        --fs-2: 32px;
+        --size-2: 32px;
     }
 
     /* Quiz */
@@ -1147,7 +1147,7 @@ RESPONSIVIDADE
 
     /* Referências */
     .referencias-title {
-        --fs-2: 32px;
+        --size-2: 32px;
     }
 
     .referencias-banner {
@@ -1189,7 +1189,7 @@ RESPONSIVIDADE
 @media (min-width: 768px) {
 
     :root {
-        --fs-2: 35px;
+        --size-2: 35px;
         --size-3: 20px;
     }
 
@@ -1200,7 +1200,7 @@ RESPONSIVIDADE
 
     /* Referências */
     .referencias-title {
-        --fs-2: 42px;
+        --size-2: 42px;
     }
 }
 
@@ -1325,7 +1325,7 @@ RESPONSIVIDADE
 @media (min-width: 1200px) {
 
     :root {
-        --fs-2: 42px;
+        --size-2: 42px;
     }
 
     /* Estilos Reutilizáveis */
@@ -1335,7 +1335,7 @@ RESPONSIVIDADE
 
     /* Conteúdo */
     .conteudo .h2 {
-        --fs-2: 42px;
+        --size-2: 42px;
     }
 
     .conteudo :is(.section-title, .section-text) {
