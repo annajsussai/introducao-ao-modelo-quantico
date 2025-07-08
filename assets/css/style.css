@@ -455,10 +455,6 @@ RESPONSIVIDADE
 
 @media (min-width: 450px) {
 
-    :root {
-        --size-1: 60px;
-    }
-
     /* Estilos Reutilizáveis */
     .h1,
     .h2 {
@@ -532,11 +528,6 @@ RESPONSIVIDADE
 }
 
 @media (min-width: 768px) {
-
-    :root {
-        --size-2: 35px;
-        --size-3: 20px;
-    }
 
     /* Estilos Reutilizáveis */
     .container {
@@ -654,10 +645,6 @@ RESPONSIVIDADE
 }
 
 @media (min-width: 1200px) {
-
-    :root {
-        --size-2: 42px;
-    }
 
     /* Estilos Reutilizáveis */
     .container {
