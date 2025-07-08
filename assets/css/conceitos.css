@@ -1091,15 +1091,15 @@ ANALOGIAS QUÂNTICAS
   100% { transform: scale(1); opacity: 1; }
 }
 
-
 /*----------*\ 
 RESPONSIVIDADE
 \*----------*/
 
 @media (min-width: 450px) {
 
+
     :root {
-        /* --size-1: 60px; REMOVIDO */
+        --size-1: 60px; 
     }
 
     /* Estilos Reutilizáveis */
@@ -1118,6 +1118,17 @@ RESPONSIVIDADE
         width: 300px;
     }
 
+
+    /* Conteúdo */
+    .conteudo .h2 {
+        --size-2: 32px;
+    }
+
+    /* Quiz */
+    .quiz-title {
+        --size-1: 42px;
+    }
+
     .quiz-form {
         display: flex;
         justify-content: center;
@@ -1131,6 +1142,11 @@ RESPONSIVIDADE
 
     .quiz .btn-secondary {
         min-width: max-content;
+    }
+
+    /* Referências */
+    .referencias-title {
+        --size-2: 32px;
     }
 
     .referencias-banner {
@@ -1157,6 +1173,7 @@ RESPONSIVIDADE
         right: 0;
     }
 
+
     /* Footer */
     .footer-brand {
         margin-bottom: 40px;
@@ -1170,11 +1187,20 @@ RESPONSIVIDADE
 
 @media (min-width: 768px) {
 
+    :root {
+        --size-2: 35px;
+        --size-3: 20px;
+    }
+
     /* Estilos Reutilizáveis */
     .container {
         max-width: 740px;
     }
 
+    /* Referências */
+    .referencias-title {
+        --size-2: 42px;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -1297,9 +1323,18 @@ RESPONSIVIDADE
 
 @media (min-width: 1200px) {
 
+    :root {
+        --size-2: 42px;
+    }
+
     /* Estilos Reutilizáveis */
     .container {
         max-width: 1150px;
+    }
+
+    /* Conteúdo */
+    .conteudo .h2 {
+        --size-2: 42px;
     }
 
     .conteudo :is(.section-title, .section-text) {
@@ -1316,6 +1351,8 @@ RESPONSIVIDADE
         padding: 10px 15px;
     }
 }
+
+
 
 @media (max-width: 1023px) {
 
@@ -1353,6 +1390,7 @@ RESPONSIVIDADE
         justify-content: center;
     }
 }
+
 
 @media (max-width: 768px) {
 
