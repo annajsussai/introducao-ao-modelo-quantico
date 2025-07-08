@@ -113,11 +113,11 @@ STYLE REUTILIZÁVEIS
   font-size: var(--size-1);
 }
 
-.h2 { font-size: var(--fs-2); }
+.h2 { font-size: var(--size-2); }
 
 .h3 {
   color: var(--azul-escuro);
-  font-size: var(--fs-3);
+  font-size: var(--size-3);
 }
 
 .h4 {
